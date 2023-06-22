@@ -6,7 +6,9 @@ import HandymanIcon from '@mui/icons-material/Handyman';
 import { makeStyles } from 'tss-react/mui';
 import { Route, Routes, Switch as RouterSwitch, BrowserRouter, Router, useLocation, useNavigate, useParams, Navigate, Outlet, Link } from 'react-router-dom';
 import { useFormik } from 'formik';
-
+import Home from './pages/Home';
+import HR from './pages/HR';
+import Sales from './pages/Sales';
 const drawerWidth = 250;
 
 const useStyles = makeStyles()((theme) => {

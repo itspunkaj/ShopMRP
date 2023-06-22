@@ -4,7 +4,9 @@
   import "./App.css";
   import  PropTypes  from "prop-types";
 
-  import { makeStyles } from "@mui/material/styles";
+  // import { makeStyles } from "@mui/material/styles";
+  import { makeStyles } from "tss-react/mui";
+
 
   import Button from "@mui/material/Button";
   import AddIcon from "@mui/icons-material/Add";
@@ -14,8 +16,8 @@
 
   import swal from "sweetalert";
 
-  export const useStyles = makeStyles(() => ({
-    appBar: {
+  export const useStyles = makeStyles()(() => {
+    return {appBar: {
       borderRadius: 15,
       margin: "30px 0",
       display: "flex",
@@ -29,7 +31,7 @@
     image: {
       marginLeft: "15px",
     },
-  }));
+  }});
 
   class EmployeeCreate extends React.Component {
     constructor(props) {
